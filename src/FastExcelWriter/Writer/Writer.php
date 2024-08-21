@@ -174,23 +174,23 @@ class Writer
     . ')\s*\(/mui';
 
 
-    protected array $buffers = [];
+    protected /* array */ $buffers = [];
 
     /** @var Excel */
     protected $excel;
 
     /** @var array */
-    protected array $tempFiles = [];
-    protected string $tempFilePrefix = '';
+    protected /* array */ $tempFiles = [];
+    protected /* string */ $tempFilePrefix = '';
 
     /** @var string|null */
-    protected ?string $tempDir = '';
+    protected /* ?string */ $tempDir = '';
 
     /** @var \ZipArchive */
-    protected \ZipArchive $zip;
+    protected /* \ZipArchive */ $zip;
 
-    protected bool $autoConvertNumber = false;
-    protected bool $sharedString = false;
+    protected /* bool */ $autoConvertNumber = false;
+    protected /* bool */ $sharedString = false;
 
 
     /**

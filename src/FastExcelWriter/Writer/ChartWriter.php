@@ -16,7 +16,7 @@ use avadim\FastExcelWriter\Exceptions\Exception;
 
 class ChartWriter extends FileWriter
 {
-    private int $_seriesIndex;
+    private /* int */ $_seriesIndex;
 
     /**
      * Write chart{n}.xml

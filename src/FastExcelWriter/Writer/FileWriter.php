@@ -15,18 +15,18 @@ class FileWriter
     protected $fd = null;
 
     /** @var string  */
-    protected string $buffer = '';
+    protected /* string */ $buffer = '';
 
     /** @var bool  */
-    protected ?bool $checkUtf8 = false;
+    protected /* ?bool */ $checkUtf8 = false;
 
-    protected string $fileName;
-    protected ?string $openFlags;
-    protected int $limit = 8191;
+    protected /* string */ $fileName;
+    protected /* ?string */ $openFlags;
+    protected /* int */ $limit = 8191;
 
-    protected array $elements = [];
-    protected int $level = -1;
-    protected bool $close = false;
+    protected /* array */ $elements = [];
+    protected /* int */ $level = -1;
+    protected /* bool */ $close = false;
 
     /**
      * WriterBuffer constructor.
