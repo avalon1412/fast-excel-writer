@@ -32,132 +32,132 @@ class Sheet implements InterfaceSheetWriter
     protected const NOTE_DEFAULT_COLOR = '#FFFFE1';
 
     /** @var Excel */
-    public Excel $excel;
+    public /* Excel */ $excel;
 
     /** @var int Index of the sheet */
-    public int $index;
+    public /* int */ $index;
 
     /** @var int Local ID of the sheet */
-    public int $localSheetId;
+    public /* int */ $localSheetId;
 
     /** @var string Key of the sheet */
-    public string $key;
+    public /* string */ $key;
 
     /** @var string $relId Id of the relationship */
-    public string $relId;
+    public /* string */ $relId;
 
-    public bool $active = false;
+    public /* bool */ $active = false;
 
     /** @var string Temporary file */
-    public string $fileTempName = '';
+    public /* string */ $fileTempName = '';
 
     /** @var string Real sheet name */
-    public string $sheetName = '';
+    public /* string */ $sheetName = '';
 
-    public string $sanitizedSheetName = '';
-    public string $xmlName = '';
+    public /* string */ $sanitizedSheetName = '';
+    public /* string */ $xmlName = '';
 
-    public string $fileRels = '';
-    public string $xmlRels = '';
+    public /* string */ $fileRels = '';
+    public /* string */ $xmlRels = '';
 
-    public bool $open = false;
-    public bool $close = false;
+    public /* bool */ $open = false;
+    public /* bool */ $close = false;
 
     // written rows of sheet
-    public int $rowCountWritten = 0;
+    public /* int */ $rowCountWritten = 0;
 
     // written cols of row
-    public int $colCountWritten = 0;
+    public /* int */ $colCountWritten = 0;
 
-    public ?FileWriter $fileWriter = null;
+    public /* ?FileWriter */ $fileWriter = null;
 
-    public array $defaultStyle = [];
+    public /* array */ $defaultStyle = [];
 
-    protected array $sheetStylesSummary = [];
+    protected /* array */ $sheetStylesSummary = [];
 
     // ZERO based
-    public int $freezeRows = 0;
-    public int $freezeColumns = 0;
+    public /* int */ $freezeRows = 0;
+    public /* int */ $freezeColumns = 0;
 
-    public ?string $autoFilter = null;
-    public string $absoluteAutoFilter = '';
+    public /* ?string */ $autoFilter = null;
+    public /* string */ $absoluteAutoFilter = '';
 
     // ++ ZERO based
-    public array $colFormulas = [];
-    public array $colStyles = [];
-    protected array $colAttributes = [];
+    public /* array */ $colFormulas = [];
+    public /* array */ $colStyles = [];
+    protected /* array */ $colAttributes = [];
     // --
 
     // minimal with of columns
-    protected array $colMinWidths = [];
-    protected array $colStylesSummary = [];
+    protected /* array */ $colMinWidths = [];
+    protected /* array */ $colStylesSummary = [];
 
     // special styles by field names
-    protected array $fieldStyles = [];
+    protected /* array */ $fieldStyles = [];
 
     // ++ ZERO based
-    protected array $rowSettings = [];
-    public array $rowStyles = [];
-    protected array $rowAttributes = [];
+    protected /* array */ $rowSettings = [];
+    public /* array */ $rowStyles = [];
+    protected /* array */ $rowAttributes = [];
     // --
 
     // ZERO based
-    protected array $cells = [];
+    protected /* array */ $cells = [];
 
     // Current row index
-    protected int $currentRowIdx = 0;
+    protected /* int */ $currentRowIdx = 0;
 
     // Current column index
-    protected int $currentColIdx = 0;
+    protected /* int */ $currentColIdx = 0;
 
-    protected int $rowOutlineLevel = 0;
-    protected array $rowOutlineCollapsed = [];
+    protected /* int */ $rowOutlineLevel = 0;
+    protected /* array */ $rowOutlineCollapsed = [];
 
-    protected int $offsetCol = 0;
+    protected /* int */ $offsetCol = 0;
 
-    protected array $mergeCells = [];
-    protected array $mergedCellsArray = ['rowNum1' => Excel::MAX_ROW, 'colNum1' => Excel::MAX_COL, 'rowNum2' => 0, 'colNum2' => 0];
+    protected /* array */ $mergeCells = [];
+    protected /* array */ $mergedCellsArray = ['rowNum1' => Excel::MAX_ROW, 'colNum1' => Excel::MAX_COL, 'rowNum2' => 0, 'colNum2' => 0];
 
-    protected array $totalArea = [];
-    protected array $areas = [];
+    protected /* array */ $totalArea = [];
+    protected /* array */ $areas = [];
 
-    protected int $relationshipId = 0;
+    protected /* int */ $relationshipId = 0;
 
-    protected array $relationships = [];
+    protected /* array */ $relationships = [];
 
-    protected array $lastTouch = [];
-    protected int $minRow = 0;
-    protected int $minCol = 0;
-    protected int $maxRow = 0;
-    protected int $maxCol = 0;
+    protected /* array */ $lastTouch = [];
+    protected /* int */ $minRow = 0;
+    protected /* int */ $minCol = 0;
+    protected /* int */ $maxRow = 0;
+    protected /* int */ $maxCol = 0;
 
-    protected array $namedRanges = [];
+    protected /* array */ $namedRanges = [];
 
-    protected array $notes = [];
+    protected /* array */ $notes = [];
 
-    protected array $media = [];
+    protected /* array */ $media = [];
 
-    protected array $charts = [];
+    protected /* array */ $charts = [];
 
-    protected int $drawingRelsId = 0;
+    protected /* int */ $drawingRelsId = 0;
 
-    protected array $protection = [];
+    protected /* array */ $protection = [];
 
-    protected ?string $activeCell = null;
-    protected ?string $activeRef = null;
+    protected /* ?string */ $activeCell = null;
+    protected /* ?string */ $activeRef = null;
 
-    protected array $sheetViews = [];
+    protected /* array */ $sheetViews = [];
 
-    protected array $sheetFormatPr = [];
+    protected /* array */ $sheetFormatPr = [];
 
-    protected array $sheetProperties = [];
+    protected /* array */ $sheetProperties = [];
 
     // bottom sheet nodes
-    protected array $bottomNodesOptions = [];
+    protected /* array */ $bottomNodesOptions = [];
 
-    protected array $printAreas = [];
-    protected string $printTopRows = '';
-    protected string $printLeftColumns = '';
+    protected /* array */ $printAreas = [];
+    protected /* string */ $printTopRows = '';
+    protected /* string */ $printLeftColumns = '';
 
 
     /**

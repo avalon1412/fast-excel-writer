@@ -12,8 +12,8 @@ use avadim\FastExcelReader\Excel as ExcelReader;
 
 final class FastExcelWriterTest extends TestCase
 {
-    protected ?ExcelReader $excelReader = null;
-    protected array $cells = [];
+    protected /* ?ExcelReader */ $excelReader = null;
+    protected /* array */ $cells = [];
 
 
     protected function getValue($cell)

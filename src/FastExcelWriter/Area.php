@@ -41,23 +41,23 @@ use avadim\FastExcelWriter\Exceptions\Exception;
 class Area
 {
     /** @var Sheet */
-    protected Sheet $sheet;
+    protected /* Sheet */ $sheet;
 
     /** @var array[]  */
-    protected array $coord;
+    protected /* array */ $coord;
 
     /** @var array  */
-    protected array $dimension = [];
+    protected /* array */ $dimension = [];
 
     /** @var string */
     protected $range;
 
     /** @var int  */
-    protected int $index = -1;
+    protected /* int */ $index = -1;
 
-    protected int $currentColNum;
+    protected /* int */ $currentColNum;
 
-    protected int $currentRowNum;
+    protected /* int */ $currentRowNum;
 
     /**
      * Area constructor

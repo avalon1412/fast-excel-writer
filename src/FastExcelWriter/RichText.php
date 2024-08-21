@@ -4,12 +4,12 @@ namespace avadim\FastExcelWriter;
 
 class RichText
 {
-    protected string $text = '';
-    protected array $buffer;
-    protected int $pos;
-    protected array $prop = ['b' => null, 'i' => null, 'u' => null, 'f' => null, 's' => null, 'c' => null];
-    protected array $fragments = [];
-    protected ?string $xml = null;
+    protected /* string */ $text = '';
+    protected /* array */ $buffer;
+    protected /* int */ $pos;
+    protected /* array */ $prop = ['b' => null, 'i' => null, 'u' => null, 'f' => null, 's' => null, 'c' => null];
+    protected /* array */ $fragments = [];
+    protected /* ?string */ $xml = null;
 
     /**
      * @param string|null $text

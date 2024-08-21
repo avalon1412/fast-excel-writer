@@ -18,18 +18,18 @@ class PlotArea
      *
      * @var Layout|null
      */
-    private ?Layout $layout = null;
+    private /* ?Layout */ $layout = null;
 
     /**
      * Plot Series
      *
      * @var DataSeries[] array of DataSeries
      */
-    private array $plotDataSeries = [];
+    private /* array */ $plotDataSeries = [];
 
-    private ?string $defaultChartType = null;
+    private /* ?string */ $defaultChartType = null;
 
-    private array $defaultColors = [];
+    private /* array */ $defaultColors = [];
 
 
     /**

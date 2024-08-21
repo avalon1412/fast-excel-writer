@@ -11,7 +11,7 @@ class DataSource
     const DATA_TYPE_STRING = 'string';
     const DATA_TYPE_NUMBER = 'number';
 
-    private static array $availableDataTypes = [
+    private static /* array */ $availableDataTypes = [
         self::DATA_TYPE_STRING,
         self::DATA_TYPE_NUMBER,
     ];
@@ -21,28 +21,28 @@ class DataSource
      *
      * @var string
      */
-    protected string $dataType;
+    protected /* string */ $dataType;
 
     /**
      * Series Data Source
      *
      * @var string
      */
-    protected string $dataSource;
+    protected /* string */ $dataSource;
 
     /**
      * Format Code
      *
      * @var string|null
      */
-    protected ?string $formatCode;
+    protected /* ?string */ $formatCode;
 
     /**
      * Point Count (The number of datapoints in the dataseries)
      *
      * @var int
      */
-    protected int $pointCount = 0;
+    protected /* int */ $pointCount = 0;
 
 
     /**

@@ -12,7 +12,7 @@ class Font
     protected const DEFAULT_FONT_WIDTH = 1.2;
 
 
-    protected static array $fontWidths = [
+    protected static /* array */ $fontWidths = [
         'Aptos' => [
             'default' => 1.07,
             'dots' => 0.55,
@@ -60,7 +60,7 @@ class Font
         ],
     ];
 
-    protected static float $widthFactor = 1.0;
+    protected static /* float */ $widthFactor = 1.0;
 
 
     public static function setFontWidthFactor(float $factor)

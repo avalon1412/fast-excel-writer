@@ -86,20 +86,20 @@ class Style
 
     protected static $instance;
 
-    public array $localeSettings = [];
+    public /* array */ $localeSettings = [];
 
-    public array $defaultFont = [];
-    protected int $defaultFontId = -1;
+    public /* array */ $defaultFont = [];
+    protected /* int */ $defaultFontId = -1;
 
-    public array $defaultStyle = [];
+    public /* array */ $defaultStyle = [];
 
     /** @var array Specified styles for hyperlinks */
-    public array $hyperlinkStyle = [];
+    public /* array */ $hyperlinkStyle = [];
 
     /** @var array Specified styles for formats '@...'  */
-    public array $defaultFormatStyles = [];
+    public /* array */ $defaultFormatStyles = [];
 
-    public array $indexedColors = ['00000000',
+    public /* array */ $indexedColors = ['00000000',
         '00FFFFFF', '00FF0000', '0000FF00', '000000FF', '00FFFF00', '00FF00FF', '0000FFFF', '00000000', '00FFFFFF',
         '00FF0000', '0000FF00', '000000FF', '00FFFF00', '00FF00FF', '0000FFFF', '00800000', '00008000', '00000080',
         '00808000', '00800080', '00008080', '00C0C0C0', '00808080', '009999FF', '00993366', '00FFFFCC', '00CCFFFF',
@@ -109,19 +109,19 @@ class Style
         '00969696', '00003366', '00339966', '00003300', '00333300', '00993300', '00993366', '00333399', '00333333',
     ];
 
-    protected array $elements = [];
+    protected /* array */ $elements = [];
 
-    protected array $elementIndexes = [];
+    protected /* array */ $elementIndexes = [];
 
-    protected static array $fontStyleDefines = ['bold', 'italic', 'strike', 'underline'];
+    protected static /* array */ $fontStyleDefines = ['bold', 'italic', 'strike', 'underline'];
 
-    protected static array $borderStyleDefines = [self::BORDER_STYLE_THIN, self::BORDER_STYLE_MEDIUM, self::BORDER_STYLE_THICK, self::BORDER_STYLE_DASH_DOT,
+    protected static /* array */ $borderStyleDefines = [self::BORDER_STYLE_THIN, self::BORDER_STYLE_MEDIUM, self::BORDER_STYLE_THICK, self::BORDER_STYLE_DASH_DOT,
         self::BORDER_STYLE_DASH_DOT_DOT, self::BORDER_STYLE_DASHED, self::BORDER_STYLE_DOTTED, self::BORDER_STYLE_DOUBLE, self::BORDER_STYLE_HAIR,
         self::BORDER_STYLE_MEDIUM_DASH_DOT, self::BORDER_STYLE_MEDIUM_DASH_DOT_DOT, self::BORDER_STYLE_MEDIUM_DASHED, self::BORDER_STYLE_SLANT_DASH_DOT];
 
 
 
-    public array $_styleCache = [];
+    public /* array */ $_styleCache = [];
 
     /**
      * Constructor of Style
@@ -191,7 +191,7 @@ class Style
             '_border_id' => 0,
             '_xf_id' => 0,
         ];
-        $this->addXfs($styleVal,);
+        $this->addXfs($styleVal/* , */);
 
         $this->hyperlinkStyle = $hyperlinkStyle;
         $this->defaultFormatStyles = $defaultFormatStyles;
@@ -1042,7 +1042,7 @@ class Style
                         'index' => 0,
                         'value' => $value,
                     ]],
-                    array_slice($this->elements[$sectionName], 1),
+                    array_slice($this->elements[$sectionName], 1)/* , */
                 );
             }
             else {
@@ -1052,7 +1052,7 @@ class Style
                         'index' => $replaceIndex,
                         'value' => $value,
                     ]],
-                    array_slice($this->elements[$sectionName], $replaceIndex + 1),
+                    array_slice($this->elements[$sectionName], $replaceIndex + 1)/* , */
                 );
             }
 

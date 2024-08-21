@@ -49,67 +49,67 @@ class DataSeries
     /**
      * @var string|null
      */
-    private ?string $chartType = null;
+    private /* ?string */ $chartType = null;
 
     /**
      * Series Plot Chart Type
      *
      * @var string
      */
-    private string $plotChartType;
+    private /* string */ $plotChartType;
 
     /**
      * Plot Chart Direction
      *
      * @var string|null
      */
-    private ?string $plotChartDirection = null;
+    private /* ?string */ $plotChartDirection = null;
 
     /**
      * Plot Grouping Type
      *
      * @var string|null
      */
-    private ?string $plotGrouping = null;
+    private /* ?string */ $plotGrouping = null;
 
     /**
      * Plot Style
      *
      * @var string|null
      */
-    private ?string $plotStyle = null;
+    private /* ?string */ $plotStyle = null;
 
-    private int $plotAxisNum = 1;
+    private /* int */ $plotAxisNum = 1;
 
     /**
      * Plot Values
      *
      * @var DataSeriesValues[] array of DataSeriesValues
      */
-    private array $dataSeriesValues = [];
+    private /* array */ $dataSeriesValues = [];
 
     /**
      * Plot Labels
      *
      * @var DataSeriesValues[] array of DataSeriesValues
      */
-    private array $dataSeriesLabels = [];
+    private /* array */ $dataSeriesLabels = [];
 
     /**
      * Plot Category Labels
      *
      * @var DataSeriesValues[] array of Category Labels
      */
-    private array $categoryAxisLabels = [];
+    private /* array */ $categoryAxisLabels = [];
 
     /**
      * Smooth Line
      *
      * @var bool
      */
-    private bool $smoothLine = false;
+    private /* bool */ $smoothLine = false;
 
-    private array $axisId = [
+    private /* array */ $axisId = [
         1 => [1 => 75091328, 2 => 75089408],
         2 => [1 => 1623884543, 2 => 1648528079],
     ];

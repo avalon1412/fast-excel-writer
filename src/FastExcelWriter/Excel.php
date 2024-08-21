@@ -106,7 +106,7 @@ class Excel implements InterfaceBookWriter
     public const PAPERSIZE_B6_JIS_ROTATED = 89; // B6 (JIS) Rotated (182 mm x 128 mm)
 
 
-    public static array $availableImageTypes = [
+    public static /* array */ $availableImageTypes = [
         'jpg' => 'image/jpeg',
         'gif' => 'image/gif',
         'png' => 'image/png',
@@ -115,7 +115,7 @@ class Excel implements InterfaceBookWriter
         'svg' => 'image/svg+xml',
     ];
 
-    protected static string $tempDir;
+    protected static /* string */ $tempDir;
 
     /** @var Writer */
     public $writer;
@@ -123,33 +123,33 @@ class Excel implements InterfaceBookWriter
     /** @var Style */
     public $style;
 
-    public bool $saved = false;
+    public /* bool */ $saved = false;
 
     /** @var int  */
-    protected int $maxSheetIndex = 0;
+    protected /* int */ $maxSheetIndex = 0;
 
     /** @var array Sheet[] */
-    protected array $sheets = [];
+    protected /* array */ $sheets = [];
 
-    protected array $themes = [];
+    protected /* array */ $themes = [];
 
-    protected array $metadata = [];
+    protected /* array */ $metadata = [];
 
-    protected array $bookViews = [];
+    protected /* array */ $bookViews = [];
 
-    protected array $definedNames = [];
+    protected /* array */ $definedNames = [];
 
     /** @var bool */
-    protected bool $isRightToLeft = false;
+    protected /* bool */ $isRightToLeft = false;
 
-    protected array $sharedStrings = [];
-    protected int $sharedStringsCount = 0;
+    protected /* array */ $sharedStrings = [];
+    protected /* int */ $sharedStringsCount = 0;
 
-    protected string $fileName = '';
+    protected /* string */ $fileName = '';
 
-    protected array $media = [];
+    protected /* array */ $media = [];
 
-    protected array $protection = [];
+    protected /* array */ $protection = [];
 
 
 

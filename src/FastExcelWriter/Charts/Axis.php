@@ -14,7 +14,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $axisNumber = [
+    private /* array */ $axisNumber = [
         'format' => self::FORMAT_CODE_GENERAL,
         'source_linked' => 1
     ];
@@ -24,7 +24,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $axisOptions = [
+    private /* array */ $axisOptions = [
         'minimum' => null,
         'maximum' => null,
         'major_unit' => null,
@@ -42,7 +42,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $fillProperties = [
+    private /* array */ $fillProperties = [
         'type' => self::EXCEL_COLOR_TYPE_ARGB,
         'value' => null,
         'alpha' => 0
@@ -53,7 +53,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $lineProperties = [
+    private /* array */ $lineProperties = [
         'type' => self::EXCEL_COLOR_TYPE_ARGB,
         'value' => null,
         'alpha' => 0
@@ -64,7 +64,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $lineStyleProperties = [
+    private /* array */ $lineStyleProperties = [
         'width' => '9525',
         'compound' => self::LINE_STYLE_COMPOUND_SIMPLE,
         'dash' => self::LINE_STYLE_DASH_SOLID,
@@ -87,7 +87,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $shadowProperties = [
+    private /* array */ $shadowProperties = [
         'presets' => self::SHADOW_PRESETS_NOSHADOW,
         'effect' => null,
         'color' => [
@@ -112,7 +112,7 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $glowProperties = [
+    private /* array */ $glowProperties = [
         'size' => null,
         'color' => [
             'type' => self::EXCEL_COLOR_TYPE_STANDARD,
@@ -126,11 +126,11 @@ class Axis extends Properties
      *
      * @var  array of mixed
      */
-    private array $softEdges = [
+    private /* array */ $softEdges = [
         'size' => null
     ];
 
-    private string $orientation;
+    private /* string */ $orientation;
 
 
     /**

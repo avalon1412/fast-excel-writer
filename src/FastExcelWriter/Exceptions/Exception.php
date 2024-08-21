@@ -13,7 +13,7 @@ class Exception extends \RuntimeException
     public const ERROR_FILE = 201;
     public const ERROR_RUNTIME = 901;
 
-    protected static int $defaultCode = self::ERROR_RUNTIME;
+    protected static /* int */ $defaultCode = self::ERROR_RUNTIME;
 
     public static function throwNew($message, ...$args)
     {

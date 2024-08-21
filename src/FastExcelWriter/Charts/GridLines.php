@@ -22,7 +22,7 @@ class GridLines extends Properties
 
     private $objectState = false;
 
-    private array $lineProperties = [
+    private /* array */ $lineProperties = [
         'color' => [
             'type' => self::EXCEL_COLOR_TYPE_STANDARD,
             'value' => null,

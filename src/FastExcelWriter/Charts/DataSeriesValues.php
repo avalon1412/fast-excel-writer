@@ -18,24 +18,24 @@ class DataSeriesValues extends DataSource
      *
      * @var string|null
      */
-    private ?string $pointMarker = 'none';
+    private /* ?string */ $pointMarker = 'none';
 
     /**
      * Data Values
      *
      * @var array of mixed
      */
-    private array $dataValues = [];
+    private /* array */ $dataValues = [];
 
     /**
      * @var DataSeriesLabels|null
      */
-    private ?DataSeriesLabels $labels = null;
+    private /* ?DataSeriesLabels */ $labels = null;
 
     /**
      * @var array
      */
-    private array $options = [];
+    private /* array */ $options = [];
 
 
     /**

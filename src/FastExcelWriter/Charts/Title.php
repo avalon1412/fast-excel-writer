@@ -14,14 +14,14 @@ class Title
      *
      * @var string|null
      */
-    private ?string $caption = null;
+    private /* ?string */ $caption = null;
 
     /**
      * Title Layout
      *
      * @var Layout|null
      */
-    private ?Layout $layout = null;
+    private /* ?Layout */ $layout = null;
 
     /**
      * Create a new Title

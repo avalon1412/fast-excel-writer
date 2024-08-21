@@ -35,28 +35,28 @@ class Layout
      *
      * @var float
      */
-    private float $xPos = 0;
+    private /* float */ $xPos = 0;
 
     /**
      * Y-Position
      *
      * @var float
      */
-    private float $yPos = 0;
+    private /* float */ $yPos = 0;
 
     /**
      * width
      *
      * @var float
      */
-    private float $width = 0;
+    private /* float */ $width = 0;
 
     /**
      * height
      *
      * @var float
      */
-    private float $height = 0;
+    private /* float */ $height = 0;
 
     /**
      * show legend key
@@ -64,7 +64,7 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showLegendKey = false;
+    private /* bool */ $showLegendKey = false;
 
     /**
      * show value
@@ -72,7 +72,7 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showVal = false;
+    private /* bool */ $showVal = false;
 
     /**
      * show category name
@@ -80,7 +80,7 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showCatName = false;
+    private /* bool */ $showCatName = false;
 
     /**
      * show data series name
@@ -88,7 +88,7 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showSerName = false;
+    private /* bool */ $showSerName = false;
 
     /**
      * show percentage
@@ -96,14 +96,14 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showPercent = false;
+    private /* bool */ $showPercent = false;
 
     /**
      * show bubble size
      *
      * @var boolean
      */
-    private bool $showBubbleSize = false;
+    private /* bool */ $showBubbleSize = false;
 
     /**
      * show leader lines
@@ -111,7 +111,7 @@ class Layout
      *
      * @var boolean
      */
-    private bool $showLeaderLines = false;
+    private /* bool */ $showLeaderLines = false;
 
 
     /**

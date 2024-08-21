@@ -23,7 +23,7 @@ class Legend
     const POSITION_TOP      = 't';
     const POSITION_TOPRIGHT = 'tr';
 
-    private static array $positionXLref = [
+    private static /* array */ $positionXLref = [
         self::xlLegendPositionBottom => self::POSITION_BOTTOM,
         self::xlLegendPositionCorner => self::POSITION_TOPRIGHT,
         self::xlLegendPositionCustom => '??',
@@ -37,21 +37,21 @@ class Legend
      *
      * @var    string
      */
-    private string $position = self::POSITION_RIGHT;
+    private /* string */ $position = self::POSITION_RIGHT;
 
     /**
      * Allow overlay of other elements?
      *
      * @var    boolean
      */
-    private bool $overlay = true;
+    private /* bool */ $overlay = true;
 
     /**
      * Legend Layout
      *
      * @var Layout|null
      */
-    private ?Layout $layout = null;
+    private /* ?Layout */ $layout = null;
 
 
     /**

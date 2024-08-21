@@ -34,7 +34,7 @@ class Chart
     const TYPE_DOUGHNUT         = self::TYPE_DONUT;
     const TYPE_COMBO            = 'combo';
 
-    public static array $charTypes = [
+    public static /* array */ $charTypes = [
         self::TYPE_BAR              ,
         self::TYPE_BAR_STACKED      ,
         self::TYPE_COLUMN           ,
@@ -54,37 +54,37 @@ class Chart
         self::TYPE_COMBO            ,
     ];
 
-    public string $fileName;
+    public /* string */ $fileName;
 
-    public string $rId;
+    public /* string */ $rId;
 
-    private string $chartType;
+    private /* string */ $chartType;
 
     /**
      * @var Sheet|null
      */
-    private ?Sheet $sheet = null;
+    private /* ?Sheet */ $sheet = null;
 
     /**
      * Chart Name
      *
      * @var string
      */
-    private string $name = '';
+    private /* string */ $name = '';
 
     /**
      * Chart Title
      *
      * @var Title
      */
-    private Title $title;
+    private /* Title */ $title;
 
     /**
      * Chart Legend
      *
      * @var Legend|null
      */
-    private ?Legend $legend;
+    private /* ?Legend */ $legend;
 
     /**
      * Category Axis Title
@@ -112,14 +112,14 @@ class Chart
      *
      * @var PlotArea
      */
-    private PlotArea $plotArea;
+    private /* PlotArea */ $plotArea;
 
     /**
      * Plot Visible Only
      *
      * @var bool
      */
-    private bool $plotVisibleOnly = true;
+    private /* bool */ $plotVisibleOnly = true;
 
     /**
      * Display Blanks as
@@ -133,42 +133,42 @@ class Chart
      *
      * @var Axis|null
      */
-    private ?Axis $xAxis;
+    private /* ?Axis */ $xAxis;
 
     /**
      * Chart Axis Y as
      *
      * @var Axis|null
      */
-    private ?Axis $yAxis;
+    private /* ?Axis */ $yAxis;
 
     /**
      * Chart Axis Y2 as
      *
      * @var Axis|null
      */
-    private ?Axis $yAxis2;
+    private /* ?Axis */ $yAxis2;
 
     /**
      * Chart Major Gridlines as
      *
      * @var GridLines|null
      */
-    private ?GridLines $majorGridlines;
+    private /* ?GridLines */ $majorGridlines;
 
     /**
      * Chart Minor Gridlines as
      *
      * @var GridLines|null
      */
-    private ?GridLines $minorGridlines;
+    private /* ?GridLines */ $minorGridlines;
 
     /**
      * Top-Left Cell Position
      *
      * @var string
      */
-    private string $topLeftCellRef = 'A1';
+    private /* string */ $topLeftCellRef = 'A1';
 
 
     /**
@@ -176,7 +176,7 @@ class Chart
      *
      * @var int
      */
-    private int $topLeftXOffset = 0;
+    private /* int */ $topLeftXOffset = 0;
 
 
     /**
@@ -184,7 +184,7 @@ class Chart
      *
      * @var int
      */
-    private int $topLeftYOffset = 0;
+    private /* int */ $topLeftYOffset = 0;
 
 
     /**
@@ -192,7 +192,7 @@ class Chart
      *
      * @var string
      */
-    private string $bottomRightCellRef = 'A1';
+    private /* string */ $bottomRightCellRef = 'A1';
 
 
     /**
@@ -200,7 +200,7 @@ class Chart
      *
      * @var int
      */
-    private int $bottomRightXOffset = 10;
+    private /* int */ $bottomRightXOffset = 10;
 
 
     /**
@@ -208,9 +208,9 @@ class Chart
      *
      * @var int
      */
-    private int $bottomRightYOffset = 10;
+    private /* int */ $bottomRightYOffset = 10;
     
-    private int $_seriesIndex;
+    private /* int */ $_seriesIndex;
 
 
     /**
